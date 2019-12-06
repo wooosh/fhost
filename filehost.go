@@ -13,11 +13,10 @@ import (
     "github.com/wooosh/base62"
 )
 
-var auth string
+var auth, address string
 var idNext int64
 var idMux sync.Mutex
 var authEnabled bool
-var address string
 
 func check(err error) {
     if err != nil {
